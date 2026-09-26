@@ -1,0 +1,21 @@
+{
+  "name": "billing-worker",
+  "version": "3.4.2",
+  "private": true,
+  "description": "Northwind Commerce billing worker (Tier 2, internal, PCI).",
+  "type": "module",
+  "scripts": {
+    "build:header": "tsx scripts/build-invoice-header.ts",
+    "start": "tsx src/worker.ts",
+    "test": "node --import tsx --test \"test/**/*.test.ts\""
+  },
+  "dependencies": {
+    "lodash": "4.17.20"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.0",
+    "@types/node": "^22.13.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
